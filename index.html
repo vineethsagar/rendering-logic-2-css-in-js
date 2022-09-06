@@ -12,12 +12,46 @@
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+    <style>
+      .pink.box {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 75px;
+        height: 75px;
+        background: deeppink;
+      }
+    </style>
+
+    <p>Paragraph One</p>
+    <p>Paragraph Two</p>
+    <p>Paragraph Three</p>
+    <!--
+  cut-and-paste this box so
+  that it sits above the
+  paragraphs
+-->
+    <div class="pink box"></div>
+    <style>
+      .parent {
+        border: 4px solid;
+      }
+
+      .child {
+        /*
+        Enable this property
+        in the devtools!
+      */
+        /* position: absolute; */
+        width: 200px;
+        height: 200px;
+        background: pink;
+        opacity: 0.5;
+      }
+    </style>
+
+    <div class="parent">
+      <div class="child"></div>
+    </div>
   </body>
 </html>
